@@ -1,6 +1,7 @@
 {
     "builds": [{
-        "src": "hisabkitab/wsgi.py",
+        #hisabkitab/wsgi.py
+        "src": "main.py",
         "use": "@vercel/python",
         "config": {
             "maxLambdaSize": "15mb",
@@ -12,7 +13,7 @@
     "routes": [{
 
         "src": ".(/*)",
-        "dest": "hisabkitab/wsgi.py"
+        "dest": "main.py"
 
     }]
 
